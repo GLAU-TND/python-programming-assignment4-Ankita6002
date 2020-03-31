@@ -1,0 +1,8 @@
+#problem 3
+p=input()
+q=eval(input())
+n= set()
+for i in q :
+    if p==i[0:len(p)]:
+        n.add(i)
+print(n)        
