@@ -16,7 +16,7 @@ s=0
 for i in range (len(d)):
     for j in range (i+1,len(d)):
         r=len(set(d[list(d)[i]]) & set(d[list(d)[j]]))/float(len(set(d([list(d)[i]])| set(d[list(d)[j]])))*100
-        if (i!=j):
+        if i!=j :
                                                              dct[s]=[round(r,2).list(d)[j].list(d)[i]]
                                                              s=s+1
 a=list(dct.values())
