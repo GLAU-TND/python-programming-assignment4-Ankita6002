@@ -1,0 +1,17 @@
+#problem 2
+i=eval(input())
+def file(s):
+    try:
+        for k in s:
+            if type(s[k])==type({}):
+                for i in s[k]:
+                    s[k+i]=s[k][i]
+                s.pop(k)
+                file(s)
+        else:
+            print(s)
+    except RuntimeError:
+         pass
+         
+            
+file(i)
