@@ -1,3 +1,4 @@
+#problem 1
 l=eval(input())
 n=int(input())
 new=[]
@@ -10,26 +11,24 @@ for i in new:
 for i in d:
     for j in l:
         if i==j[0]:
-            d[i].append(j[i])
+            d[i].append(j[1])
 dct={}
 s=0
 for i in range (len(d)):
     for j in range (i+1,len(d)):
-        r=len(set(d[list(d)[i]]) & set(d[list(d)[j]]))/float(len(set(d([list(d)[i]])| set(d[list(d)[j]])))*100
-        if i!=j :
-                                                             dct[s]=[round(r,2).list(d)[j].list(d)[i]]
-                                                             s=s+1
+        r=len(set(d[list(d)[i]]) & set(d[list(d)[j]]))/float(len(set(d[list(d)[i]])| set(d[list(d)[j]])))*100
+        if(i!=j):
+            dct[s]=[round(r,2),list(d)[j],list(d)[i]]
+            s=s+1
 a=list(dct.values())
 for k in range (len(a)):
         if a[k][1]>a[k][2] :
-                                                             c=a[k][1]
-                                                             a[k][1]=a[k][2]
-                                                             a[k][2]=c
+            c=a[k][1]
+            a[k][1]=a[k][2]
+            a[k][2]=c
 a.sort(key=lambda a:a[0],reverse=True)
 l=[]
 for e in range (n):
-                                                             l+=[(a[e][1],a[e][2])]
-print(l)                                                            
-              
-    
+    l+=[(a[e][1],a[e][2])]
+print(l)                                              
             
